@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Muhammad Rizky Langit Arifi</title>
+<style>
+:root{--navy:#10243e;--blue:#2563eb;--pale:#eef4ff;--ink:#1e293b;--muted:#64748b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#f7f9fc;line-height:1.65}
+header{background:var(--navy);color:white;padding:22px 7%;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.4px}nav{display:flex;gap:22px;flex-wrap:wrap}nav a{color:#e2e8f0;text-decoration:none;font-size:14px}nav a:hover{color:white}
+.hero{background:linear-gradient(135deg,#10243e,#1d4ed8);color:white;padding:86px 7% 78px}
+.hero small{color:#bfdbfe;text-transform:uppercase;letter-spacing:2px;font-weight:bold}
+.hero h1{font-size:clamp(34px,6vw,58px);line-height:1.12;max-width:850px;margin:15px 0}
+.hero p{max-width:650px;color:#dbeafe;font-size:17px}
+.tag{display:inline-block;background:#ffffff20;border:1px solid #ffffff50;padding:7px 13px;border-radius:30px;margin:8px 7px 0 0;font-size:13px}
+main{max-width:1050px;margin:auto;padding:20px 24px 70px}
+section{padding:45px 0;border-bottom:1px solid #e2e8f0}
+h2{font-size:26px;color:var(--navy);margin:0 0 18px}
+.lead{color:#475569;max-width:800px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
+.card{background:white;border:1px solid #e2e8f0;border-radius:16px;padding:22px;box-shadow:0 5px 18px #0f172a08}
+.card h3{margin:0 0 8px;color:var(--navy);font-size:18px}
+.card p{margin:0;color:#526174}
+.pill{display:inline-block;background:var(--pale);color:#1d4ed8;border-radius:20px;padding:6px 11px;margin:5px 5px 0 0;font-size:13px}
+.project{margin-bottom:16px}
+.project .number{color:var(--blue);font-weight:bold;font-size:13px;letter-spacing:1px}
+.project h3{margin:5px 0 8px}
+.meta{font-size:14px;color:var(--muted);margin-top:12px}
+.contact{background:var(--navy);color:white;border-radius:20px;padding:28px}
+.contact h2{color:white}.contact a{color:#bfdbfe}
+footer{text-align:center;color:var(--muted);padding:25px;font-size:13px}
+@media(max-width:600px){header{padding:18px 6%}.hero{padding:62px 6%}main{padding-left:18px;padding-right:18px}nav{gap:12px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="brand">RIZKY ARIFI <span style="color:#93c5fd">/ PORTFOLIO</span></div>
+  <nav>
+    <a href="#about">Profil</a><a href="#skills">Keahlian</a><a href="#projects">Proyek</a><a href="#contact">Kontak</a>
+  </nav>
+</header>
+<div class="hero">
+  <small>Portfolio Studi UAS</small>
+  <h1>Muhammad Rizky<br>Langit Arifi</h1>
+  <p>Mahasiswa Teknik Komputer yang mempelajari elektronika, pemrograman, serta penggunaan perangkat lunak dan perangkat keras.</p>
+  <span class="tag">Teknik Komputer</span><span class="tag">Politeknik Negeri Samarinda</span>
+</div>
+<main>
+<section id="about">
+  <h2>About Me</h2>
+  <p class="lead">Saya adalah mahasiswa Teknik Komputer di Politeknik Negeri Samarinda. Saat ini saya sedang mempelajari rangkaian elektronika, pemrograman, dan beberapa bidang keahlian lainnya, seperti penggunaan serta pengenalan perangkat software maupun hardware.</p>
+  <div class="grid" style="margin-top:20px">
+    <div class="card"><h3>Nama</h3><p>Muhammad Rizky Langit Arifi</p></div>
+    <div class="card"><h3>NIM</h3><p>256202010</p></div>
+    <div class="card"><h3>Program Studi</h3><p>Teknik Komputer / Teknologi Informasi</p></div>
+    <div class="card"><h3>Institusi</h3><p>Politeknik Negeri Samarinda</p></div>
+  </div>
+</section>
+<section id="skills">
+  <h2>Bidang Keahlian &amp; Keterampilan</h2>
+  <div class="grid">
+    <div class="card"><h3>Pemrograman &amp; Software</h3><span class="pill">Tinkercad</span><span class="pill">MATLAB</span><span class="pill">Proteus</span></div>
+    <div class="card"><h3>Produktivitas &amp; Kolaborasi</h3><span class="pill">Google Workspace</span><span class="pill">Microsoft Office</span><span class="pill">Git</span><span class="pill">GitHub</span></div>
+    <div class="card"><h3>Desain Teknik</h3><span class="pill">Rangkaian elektronika</span><span class="pill">Signal processing</span><span class="pill">Sensor &amp; actuator</span><span class="pill">Vektor &amp; matriks</span><span class="pill">Sistem digital</span><span class="pill">Mikrokontroler interfacing</span></div>
+  </div>
+</section>
+<section id="projects">
+  <h2>Featured Projects</h2>
+  <div class="card project">
+    <div class="number">PROJECT 01 · SIGNAL PROCESSING</div>
+    <h3>FIR – Tugas 4 Signal Processing</h3>
+    <p>Salah satu jenis filter digital yang digunakan untuk mengolah sinyal dengan melewatkan frekuensi tertentu dan mengurangi frekuensi yang tidak diinginkan.</p>
+    <p class="meta"><strong>Teknologi:</strong> MATLAB dan File Explorer</p>
+    <p class="meta"><strong>Hasil:</strong> Menjalankan program coding menggunakan MATLAB dan menampilkan gambar atau grafik.</p>
+  </div>
+  <div class="card project">
+    <div class="number">PROJECT 02 · ARDUINO</div>
+    <h3>Pengujian Dua Rangkaian Arduino Uno dengan Pushbutton dan LED</h3>
+    <p>Praktikum menggunakan Arduino Uno yang dihubungkan dengan pushbutton serta dua LED merah dan biru. Pushbutton berfungsi sebagai masukan digital, sedangkan LED menjadi indikator keluaran. Ketika tombol ditekan, Arduino membaca perubahan kondisi logika dan mengatur nyala LED sesuai program.</p>
+    <p class="meta"><strong>Teknologi:</strong> Tinkercad dan Wokwi</p>
+    <p class="meta"><strong>Hasil:</strong> Pada saat simulasi dijalankan, kedua LED berhasil menyala secara bersamaan sesuai kondisi yang telah diatur.</p>
+  </div>
+</section>
+<section id="contact">
+  <div class="contact">
+    <h2>Kontak &amp; Sertifikasi</h2>
+    <p>Email: <a href="mailto:rizkylangit166@gmail.com">rizkylangit166@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/rizkylangit166-eng" target="_blank" rel="noopener">rizkylangit166-eng</a></p>
+    <p>LinkedIn: Belum dicantumkan</p>
+    <h3>Sertifikasi Pendukung</h3>
+    <ul>
+      <li>Sertifikasi kompetensi dan keahlian bersertifikasi BNSP</li>
+      <li>Sertifikasi MikroTik (MTCNA)</li>
+      <li>Sertifikasi keahlian Cisco (sesuai dokumen sumber)</li>
+    </ul>
+    <p class="meta" style="color:#cbd5e1">Catatan: gambar sertifikat pada dokumen asli belum dimasukkan ke halaman ini.</p>
+  </div>
+</section>
+</main>
+<footer>© 2026 Muhammad Rizky Langit Arifi · Portfolio Studi UAS</footer>
+</body>
+</html>
